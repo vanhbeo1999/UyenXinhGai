@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>Me Ri Chít Mớt</title>
   <link rel="stylesheet" href="./style.css">
+<style>/* <![CDATA[ */
+.text{position:relative;font-size:30px;font-weight:600}
+.text.sec-text:before{content:"";position:absolute;top:0;left:0;height:100%;width:100%;background-color:#ffffff;border-left:2px solid #ff0026;animation:animate 4s steps(12) infinite}
+@keyframes animate{40%,60%{left:calc(100% + 4px)}100%{left:0%}}
+/* ]]> */</style>
 
 </head>
 <body>
@@ -107,9 +112,28 @@
 
 <div class="wrap" id="wrap">
   <div class="card card--inner">
-	<h4>Dear My Darling.</h4>
+	<h4>
+	<span class="text first-text">Dear</span>
+<span class="text sec-text">My Darling</span>
+	<script>//<![CDATA[
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "My Darling";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Công Chúa Mặp";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Mu Đạ";
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+//]]></script>  
+</h4>
     <h2>Công chúa mặp của anh có một mùa giáng sinh thật ấm áp nhé ❤️.<br>Không được buồn nghe chưa, ông già Lô-En chỉ tặng quà cho ai ngoan ngoãn thôi, em bé của anh ngoan mà đúng không ❤️ Anh yêu em bằng tất cả mọi thứ anh có</h2>
-    <h3>Kí Tên<br>Hoàng Tử Thừa Cân</h3>
+<h3>Kí Tên<br>Hoàng Tử Thừa Cân</h3>
   </div>
   <div class="card card--front back" onclick="openCard();"><img src="https://media.giphy.com/media/9w475hDWEPVlu/giphy.gif"></div>
   <div class="card card--front" onclick="openCard();">
@@ -130,6 +154,8 @@
 src="https://www.youtube.com/embed/AislAHfLe4M?si=Kqcrt8APQu856UgI?autoplay=1">
 </iframe>
 <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/holidays/hol-5/hol427.ani), url(https://cur.cursors-4u.net/holidays/hol-5/hol427.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/07/multi-flavor-candy-cane.html" target="_blank" title="Multi-Flavor Candy Cane"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Multi-Flavor Candy Cane" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+
 
 </body>
 </html>
